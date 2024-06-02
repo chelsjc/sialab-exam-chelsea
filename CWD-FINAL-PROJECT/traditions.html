@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome (use the correct URL) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Agbalumo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titan One">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style1.css">
+    <title>Traditions</title>
+</head>
+<body>
+    <!-- Side Navigation Structure -->
+    <ul id="slide-out" class="sidenav">
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="tourist_spot.html">Tourist Spots</a></li>
+        <li><a href="festivals.html">Festivals</a></li>
+        <li><a href="traditions.html">Traditions</a></li>
+    </ul>
+
+    <div class="navbar-fixed">
+        <nav style="background-color: black;">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo" style="font-family: 'Agbalumo', sans-serif; padding-left: 8px;">Discover PH</a>
+    
+                <!-- Side Nav Trigger for medium and small screens -->
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    
+                <!-- Navigation Links for medium and large screens -->
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html" style="color: white;">Overview</a></li>
+                    <li><a href="tourist_spot.html" style="color: white;">Tourist Spots</a></li>
+                    <li><a href="festivals.html" style="color: white;">Festivals</a></li>
+                    <li><a href="traditions.html" style="color: white;">Traditions</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div style="background-image: url('img/carabao.jpg'); background-size: cover; background-repeat: no-repeat; height: 80vh;" class="responsive-img">
+        <div class="container left-align">
+            <br><br>
+            <h2 style="font-family: 'Titan One', sans-serif; color: white; padding-top: 20px; text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;">Where Every <br> Tradition Tells <br> a Story.
+            </h2>
+        </div>
+    </div>
+
+    <div style="background-image: url('img/bayanihan.jpg'); background-size: cover; background-repeat: no-repeat; height: 80vh;" class="responsive-img">
+        <div class="container right-align">
+            <br><br><br><br><br>
+            <h2 style="font-family: 'Titan One', sans-serif; color: white; padding-top: 20px; text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;">The Power <br> of Bayanihan.
+            </h2>
+        </div>
+    </div>
+
+    <div style="background-image: url('img/xmas.webp'); background-size: cover; background-repeat: no-repeat; height: 80vh;" class="responsive-img">
+        <div class="container left-align">
+            <br><br><br><br><br>
+            <h2 style="font-family: 'Titan One', sans-serif; color: white; padding-top: 20px; text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;">
+                A Season of <br> Simbang Gabi <br> and Shared Joy.</h2>
+        </div>
+    </div>
+
+    <div style="background-image: url('img/food.jpg'); background-size: cover; background-repeat: no-repeat; height: 80vh;" class="responsive-img">
+        <div class="container right-align">
+            <br><br><br><br><br>
+            <h2 style="font-family: 'Titan One', sans-serif; color: white; padding-top: 20px; text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;">
+                Every Dish is a <br> Delicious Tradition.</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large red">
+                <i class="fa-solid fa-circle-info"></i>
+            </a>
+            <ul>
+              <li><a class="btn-floating green"><i class="fa-solid fa-envelope"></i></a></li>
+              <li><a class="btn-floating blue"><i class="fa-solid fa-phone"></i></a></li>
+            </ul>
+          </div>
+    </div>
+    
+     <!-- Footer -->
+     <footer style="background-color: black; color: white; height: 50px;">
+        <div class="container center-align" style="line-height: 50px;">
+            &copy; 2023 Discover PH by Chelsea Cuevas
+        </div>
+    </footer>
+    
+<!-- JQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.modal').modal();
+        $('.fixed-action-btn').floatingActionButton();
+    });
+</script>
+</body>
+</html>
